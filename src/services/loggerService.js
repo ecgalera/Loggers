@@ -1,4 +1,7 @@
 import winston from "winston";
+import config from "../../config.js";
+
+const env = config.LOGGERS.LOGGER
 
 export default class LoggerService {
     constructor(env) {
@@ -34,4 +37,4 @@ export default class LoggerService {
                 })
         }
     }
-} 
+};

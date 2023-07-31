@@ -11,5 +11,8 @@ export default {
     },
     PERSISTENCE:{
         Persistence: process.env.PERSISTENCE
+    },
+    LOGGERS: {
+        LOGGER: process.env.LOGGER_ENV
     }
 }
