@@ -1,0 +1,21 @@
+[
+	{
+		"title": "Pan Negro con Cereales",
+		"description": "pan con grasa",
+		"code": "6r0905dd",
+		"price": 35,
+		"status": true,
+		"category": "Panaderia",
+		"id": 1
+	},
+	{
+		"title": "Cereales",
+		"description": "pan con grasa",
+		"code": "090o5dd",
+		"price": 35,
+		"status": true,
+		"category": "Panaderia",
+		"id": 2,
+		"stock": 67
+	}
+]
