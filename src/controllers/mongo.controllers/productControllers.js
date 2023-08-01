@@ -13,6 +13,7 @@ export const getProducts = async (req, res) => {
         if (products.length == 0) {
             res.send({ message: "no hay productos cargados" })
         } else {
+            req.logger.info("Products OK")
             res.send({ status: "success", payload: products })
         }
     } catch (error) {
@@ -61,7 +62,7 @@ export const getProductById = async (req, res) => {
         const producById = await productService.getProductById({ _id: pid });
         res.send({ status: "success", payload: producById });
     } catch (error) {
-        console.log("error en el id")
+        req.logger.error("error en el id")
     }
 }
 

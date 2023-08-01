@@ -17,6 +17,7 @@ import TicketRouter from "./router/mongodb/TicketRouter.js";
 import UserRouter from "./router/mongodb/userRouter.js";
 import usersMocksRouter from "./router/routerMocks/users.mocks.router.js";
 import productsMocksRouter from "./router/routerMocks/products.mocks.router.js"
+import loggers from "./router/logger.router.js"
 
 import errorHandler from "./middleware/error.js"
 import attachLogger from "./middleware/loggers.js";
@@ -62,6 +63,9 @@ app.use("/api", productsMocksRouter)
 // Manejador de errores
 
 app.use(errorHandler)
+
+// Manejo de Loggers 
+app.use("/logger", loggers)
 
 app.listen(PORT, ()=>{
     console.log(`Listen in Port: ${PORT}`)

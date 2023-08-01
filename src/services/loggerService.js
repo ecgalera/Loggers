@@ -24,17 +24,18 @@ export default class LoggerService {
                 return winston.createLogger({
                     levels: this.options.levels,
                     transports: [
-                      new winston.transports.Console({ level: "info", format: winston.format.simple() })
+                      new winston.transports.Console({ level: "debug", format: winston.format.simple() })
                     ]
                 })
             case "prod":
                 return winston.createLogger({
                     levels: this.options.levels,
                     transports:[
-                        new winston.transports.Console({level:"http"},
-                        new winston.transports.File({level: "warining", filename: "./errors.log"}))
+                        new winston.transports.Console({level:"info",format: winston.format.simple()}),
+                        new winston.transports.File({level: "http", filename: "./errors.log", format: winston.format.simple()})
                     ]
-                })
+                });
+                
         }
     }
 };

@@ -1,0 +1,75 @@
+http: GET en /logger - 08:55:02
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /logger - 08:55:36
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /cart - 08:57:04
+http: GET en /logger - 08:57:15
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /logger - 08:58:14
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /logger - 09:00:54
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /logger - 09:04:30
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /logger - 09:07:09
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /logger - 09:08:48
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /cart - 09:09:34
+http: GET en /cart - 09:10:20
+http: GET en /logger - 09:11:10
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /cart - 09:13:00
+http: GET en /logger - 09:14:17
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /logger - 09:15:35
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /logger - 09:16:21
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /cart - 09:16:41
+http: GET en /logger - 09:20:32
+fatal: Logger from Fatal
+error: Logger from Error
+warning: Logger from Warning
+http: Logger from http
+http: GET en /cart - 09:27:51

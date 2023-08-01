@@ -14,9 +14,9 @@ export const getCartById = async (req, res) => {
             res.status(404).send({ status: "error", error: "product not found" });
         res.send({ status: "succes", payload: carts });
     } catch (err) {
-        console.log(err);
+        req.logger.info(err);
     }
-}
+};
 
 export const createCart = async (req, res) => {
     try {
@@ -26,7 +26,7 @@ export const createCart = async (req, res) => {
         console.log(error);
         return res.status(404).send({ status: "error", error: "cart not created" });
     }
-}
+};
 
 export const addProductToCart = async (req, res) => {
     try {
@@ -37,7 +37,7 @@ export const addProductToCart = async (req, res) => {
     } catch (err) {
         console.log(err);
     }
-}
+};
 
 export const deleteProducttoCart = async (req, res) => {
     try {
@@ -48,7 +48,7 @@ export const deleteProducttoCart = async (req, res) => {
     } catch (err) {
         console.log(err);
     }
-}
+};
 
 export const deleteCart = async (req, res) => {
     try {
@@ -58,7 +58,7 @@ export const deleteCart = async (req, res) => {
     } catch (err) {
         console.log(err);
     }
-}
+};
 
 export const updateProductInCart = async (req, res) => {
     try {
@@ -75,13 +75,15 @@ export const updateProductInCart = async (req, res) => {
         console.log(err);
         res.status(500).send({ status: "error", error: err.message });
     }
-}
+};
 
 export const getCartViews = async (req, res) => {
     const carts = await cartService.getCarts();
     console.log(carts)
     res.render("cart", { carts });
-}
+};
+
+
 
 
 
